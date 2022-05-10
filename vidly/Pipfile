@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 django = "*"
 pylint-django = "*"
+django-tastypie = "*"
+heroku = "*"
+gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 ipykernel = "*"
