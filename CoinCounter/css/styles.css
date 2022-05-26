@@ -1,0 +1,113 @@
+:root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-headings: #1b0760;
+    --color-body: #0e0e10;
+    --color-body-darker: #5c5577;
+    --color-border: #ccc;
+    --border-radius: 30px;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  
+  body {
+    display: grid;
+    justify-items: center;
+    background-color: gold;
+    grid-template-columns: repeat(1, 3fr);
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: var(--color-body);
+    padding: 1rem;
+       
+  }
+
+  .mySpaceSizes .roomsize {
+    font-size: 2rem;
+  }
+
+  .coinSelection {
+    font-size: 3rem;
+  }
+
+
+  img .pic_1 {
+    display: block;
+
+    border-radius: 1rem;
+  }
+
+  header_H1 {
+    align-items: center;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: var(--color-headings);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+
+  .sketch {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    body {
+        grid-template-columns: repeat(3, 3fr);
+        display:grid;
+        background-color: gold;
+        align-items: center;        
+        justify-items: center;
+        margin: 2rem;
+      font-size: 1.8rem;
+
+    }
+
+    img {
+      display: cover;
+      height: auto;
+      width: 100%;
+      border-radius: 5rem;
+    }
+  
+    h1 {
+      font-size: 6rem;
+      padding: 6rem;
+    }
+
+    .sketch {
+      display: block;
+    }
+
+  }
+  /*moon 384,400km
+  earth circumference 40,075km
+  hight of everest 8,849m
+  Burj Khalifa in Dubai 828m
+  newyork too sydney 15988km
+  stright line distance between newyork and la 3936km
+  cruising altitude 10,000m
+
+  average bedroom 30m3
+  shipping containers 76 cubic metres
+  tesla 3.17m3
+  volume of olympic swimming pool 2,500 m3
+
+  
+  

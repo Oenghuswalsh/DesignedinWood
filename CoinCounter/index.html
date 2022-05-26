@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How many coins</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--Input fields for bedroom sizes-->
+    <div>
+      <div class="mySpaceSizes">
+        <form action="" method="post" id="MyForm">
+          <label for="length, width, heigth">The Size of My Bedroom is</label
+          ><br />
+          <input
+            class="roomsize"
+            id="length"
+            type="number"
+            placeholder="Length"
+            required
+          />Meters<br />
+          <input
+            class="roomsize"
+            id="width"
+            type="number"
+            placeholder="Width"
+            required
+          />Meters<br />
+          <input
+            class="roomsize"
+            id="heigth"
+            type="number"
+            placeholder="heigth"
+            required
+          />Meters <br />
+          <label for="volume">Volume =</label> <br />
+          <input type="text" name="volume" id="volume" />m³ <br />
+          <input type="text" name="volume" id="heigth" />m³ <br />
+          <input type="submit" value="Calculate" id="submit" />
+        </form>
+        <span>heigth = </span><span id=""></span>
+      </div>
+    </div>
+    <div class="coinVolumn">
+      <form action="" method="post" id="MyCoinForm">
+        <label class="coinSelection" for="coin">Select Coin</label><br />
+        <select class="coinSelection" id="coin">
+          <option value="0">Select a coin</option>
+          <option value="1">5cents</option>
+          <option value="2">10cents</option>
+          <option value="3">20cents</option>
+          <option value="4">50cents</option>
+          <option value="5">1dollar</option>
+          <option value="6">2dollar</option></select
+        ><br />
+        <!--Output of mm³ volume of selected coin-->
+        <span>The volumn of a</span>
+        <span style="background: white" id="name"></span> <span> coin is</span
+        ><br />
+
+        <input type="text" name="coin_Volume" id="coin_Volume" />mm³ <br />
+        <input type="submit" value="Calculate" id="submit" />
+      </form>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
