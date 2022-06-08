@@ -2,22 +2,28 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: gold;
   line-height: 1.25rem;
-  margin: 0 2rem 2rem;
+  margin: 0 1rem 1rem;
   color: blueviolet;
 }
 
 header {
   display: inline;
   align-content: center;
+
 }
 
 h1 {
   text-align: center;
   text-shadow: 3px 3px 5px rgb(188, 184, 184);
+  font-size: 1.75rem;
+}
+
+.roomsize {
+  font-size: 1.3rem;
 }
 
 p {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0.1rem;
   text-align: center;
 }
 
@@ -66,6 +72,7 @@ img.grid--item {
   
 }
 
+
 mark {
   background-color: rgb(174, 185, 157);
   color: blueviolet;
@@ -74,6 +81,12 @@ mark {
 @media screen and (min-width: 800px) {
   body {
     line-height: 1.25rem;
+  }
+
+  h1 {
+    text-align: center;
+    text-shadow: 3px 3px 5px rgb(188, 184, 184);
+    font-size: 3rem;
   }
 
   .grid--1x3 {

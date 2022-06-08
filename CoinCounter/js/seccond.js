@@ -60,10 +60,12 @@ select.addEventListener("change", (event) => {
     document.getElementById("coinsHeight").innerHTML = coinsHeight;
     console.log(volumn);
 
-    var hideThisDiv
+
     if (volumn > 0) {
-        document.getElementById("hideThisDiv").style.display = "none";
+        (hideThisDiv = document.getElementById("coinVolumn").style.display = "none");
+        (hideThisDiv = document.getElementById("bedroom").style.display = "block");
     }
+
 
 });
 window.onload = document.getElementById("bedroom").onsubmit = nameB, bedRoomCoins, coinsValue, coinsHeight;

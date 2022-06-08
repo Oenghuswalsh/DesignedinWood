@@ -20,6 +20,7 @@ function volume() {
 window.onload = document.getElementById("MyForm").onsubmit = volume;
 function hideDiv() {
   document.getElementById("bedroomVolume").style.display = "none";
+  document.getElementById("coinVolumn").style.display = "block";
 }
 /* from HTML get index value of selected coin*/
 var select = document.querySelector("#coin");
