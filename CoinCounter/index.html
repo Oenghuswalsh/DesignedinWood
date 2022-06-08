@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script defer src="js/main.js"></script>
+    <script defer src="js/first.js"></script>
+    <script defer src="js/seccond.js"></script>
   </head>
   <body>
     <header>
@@ -32,9 +34,9 @@
         <!--Image of Scruge McDuck in money bin-->
         <img class="grid--item" src="images/coin_2.jpg" alt="" />
         <!--Input fields for bedroom sizes-->
-        <div class="grid--item mySpaceSizes">
+        <div class="grid--item mySpaceSizes" id="bedroomVolume">
           <form action="" method="post" id="MyForm">
-            <label for="length, width, heigth">The Size of My Bedroom is</label
+            <label for="length, width, height">The Size of My Bedroom is</label
             ><br />
             <input
               class="roomsize"
@@ -52,50 +54,27 @@
             />Meters<br />
             <input
               class="roomsize"
-              id="heigth"
+              id="height"
               type="number"
-              placeholder="heigth"
+              placeholder="height"
               required
             />Meters <br />
-            <label for="volume">Volume =</label> <br />
-            <input type="text" name="volume" id="volume" />Meters³ <br />
-            <input type="submit" value="Calculate" id="submit" />
+            <input
+              onclick="hideDiv()"
+              type="submit"
+              value="Calculate"
+              id="submit"
+            />
           </form>
         </div>
-        <div class="grid--item bedroomCoins">
-          <!--Output of number of coins to fill bedroom-->
-          <div class="mySpaceCoins">
-            <span>It would take</span>
-            <span style="background: white" id="bedRoomCoins"></span>
-            <span>_</span>
-            <span style="background: white" id="nameD"></span>
-            <span>coins to fill my bedroom</span>
-          </div>
-          <!--Output of value of coins to fill bedroom-->
-          <div class="mySpaceCoinsWorth">
-            <span>That is equal to $</span
-            ><span style="background: white" id="coinsValue"></span>
-          </div>
-          <!--Output of height of stack of coins that filled bedroom-->
-          <div class="coinHeight">
-            <span
-              >If you were to stack these coins one on the other the stack would
-              reach</span
-            ><span style="background: white" id="coinsHeight"></span
-            ><span>meters high</span><br />
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="grid grid--1x3">
-        <!--Input coin selection-->
-        <div class="grid--item coinVolumn">
-          <form>
+        <div class="grid--item hideThisDiv" id="coinVolumn">
+          <form id="myCoin">
+            <label for="volume">Volume of bedroom =</label>
+            <input type="text" name="volume" id="volume" />Meters³ <br />
+            <!--Input coin selection-->
             <label class="coinSelection" for="coin">Select Coin</label><br />
             <select class="coinSelection" id="coin">
-              <option value="0">to calculate</option>
+              <option value="0">Select coin</option>
               <option value="1">5cents</option>
               <option value="2">10cents</option>
               <option value="3">20cents</option>
@@ -103,15 +82,45 @@
               <option value="5">1dollar</option>
               <option value="6">2dollar</option>
             </select>
+            <!--Output of mm³ volume of selected coin
+            <input type="submit" value="Calculate" id="submit" />-->
+            <br />
+            <label for="coin_Volume"></label>
+            <span>The volumn of a</span>
+            <span style="background: gold" id="name"></span>
+            <span> coin is</span>
+            <input type="text" name="coin_Volume" id="coin_Volume" />mm³
           </form>
-          <!--Output of mm³ volume of selected coin-->
-          <span>The volumn of a</span>
-          <span style="background: white" id="name"></span> <span> coin is</span
-          ><br /><span
-            style="background: white; border: 1px solid black"
-            id="coin_Volume"
-          ></span>
-          <span>mm³</span>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid grid--1x3">
+        <div class="grid--item" id="bedroom">
+          <!--Output of number of coins to fill bedroom-->
+          <div class="mySpaceCoins">
+            <label for="volumeB">Volume of bedroom =</label>
+            <input type="text" name="volumeB" id="volumeB" />Meters³ <br />
+            <span>It would take</span>
+            <span style="background: gold" id="bedRoomCoins"></span>
+            <span>_</span>
+            <span style="background: gold" id="nameB"></span>
+            <span>coins to fill my bedroom</span>
+          </div>
+          <!--Output of value of coins to fill bedroom-->
+          <div class="mySpaceCoinsWorth">
+            <span>That is equal to $</span
+            ><span style="background: gold" id="coinsValue"></span>
+          </div>
+          <!--Output of height of stack of coins that filled bedroom-->
+          <div class="coinHeight">
+            <span
+              >If you were to stack these coins one on top of the other the
+              stack would reach </span
+            ><span style="background: gold" id="coinsHeight"></span
+            ><span>meters high</span><br />
+            <span></span>
+          </div>
         </div>
         <!--Input number of coins-->
         <div class="grid--item numberOfCoins volumnOfCoins">
@@ -131,7 +140,7 @@
           <span
             >The total volumn of
             <span style="background: white" id=" quan"></span><span></span>
-            <span style="background: white" id="nameB"></span> coins is</span
+            <span style="background: white" id="nameC"></span> coins is</span
           ><br />
           <span
             style="background: white; border: 1px solid black"
@@ -142,20 +151,26 @@
         <!--Input of value of total coins to be calculated-->
         <div class="grid--item coinsWorth coinsWorthVolumn">
           <form>
-            <label for="worth">Enter Total Value of Coins</label><br />
-            <input style="background: white" id="worth" type="number" />
+            <label for="worth"><mark>Enter Total Value of Coins</mark></label
+            ><br />
+            <input
+              style="background: rgb(174, 185, 157)"
+              id="worth"
+              type="number"
+            />
           </form>
           <!--Output of m³ volume of entered quantity of selected coin-->
-          <span>The total volumn of $</span
-          ><span style="background: white" id="coinWorth"></span>
-          <span> worth of</span>
-          <span style="background: white" id="nameC"></span>
-          <span>coins is</span><br />
+          <span><mark>The total volumn of $</mark></span
+          ><mark><span id="coinWorth"></span></mark>
+          <span><mark> worth of</mark></span>
+          <mark><span id="nameD"></span></mark>
+          <span><mark>coins is</mark></span
+          ><br />
           <span
             style="background: white; border: 1px solid black"
             id="totalCoinWorthVolumn"
           ></span
-          ><span>m³</span>
+          ><span><mark>m³</mark></span>
         </div>
       </div>
       <div class="grid"></div>

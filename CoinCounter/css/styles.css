@@ -2,7 +2,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: gold;
   line-height: 1.25rem;
-  margin: 0 2rem;
+  margin: 0 2rem 2rem;
   color: blueviolet;
 }
 
@@ -13,6 +13,7 @@ header {
 
 h1 {
   text-align: center;
+  text-shadow: 3px 3px 5px rgb(188, 184, 184);
 }
 
 p {
@@ -54,6 +55,7 @@ img.grid--item {
   margin-bottom: 0;
 }
 
+
 .bedroomCoins {
   margin-bottom: 0;
 }
@@ -62,6 +64,11 @@ img.grid--item {
   padding-top: 5rem;
   background-image: url(/CoinCounter/images/coin_1.jpg);
   
+}
+
+mark {
+  background-color: rgb(174, 185, 157);
+  color: blueviolet;
 }
 
 @media screen and (min-width: 800px) {
