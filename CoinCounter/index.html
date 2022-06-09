@@ -33,6 +33,18 @@
       <div class="grid grid--1x3">
         <!--Image of Scruge McDuck in money bin-->
         <img class="grid--item" src="images/coin_2.jpg" alt="" />
+        <div class="choseAction">
+          <div class="buttons grid--1x3">
+            <button class="butOne">
+              Calculate the value and quanty of coins that will fill my bedroom.
+            </button>
+            <h2>OR</h2>
+            <button class="butTwo">
+              Calculate the volume of and quanty of coins in a set value of
+              money.
+            </button>
+          </div>
+        </div>
         <!--Input fields for bedroom sizes-->
         <div class="grid--item mySpaceSizes" id="bedroomVolume">
           <form action="" method="post" id="MyForm">
@@ -128,7 +140,11 @@
             <span></span>
           </div>
         </div>
-        <!--Input number of coins-->
+        <div>
+          <!--Image of Scruge McDuck in money bin-->
+          <img class="grid--item rMcDuck" src="images/coin_2.jpg" alt="" />
+        </div>
+        <!--Input number of coins
         <div
           class="grid--item numberOfCoins volumnOfCoins"
           style="display: none"
@@ -137,7 +153,7 @@
             <label for="quantity">Enter number of Coins</label><br />
             <input id="quantity" type="number" />
           </form>
-          <!--Output of height of stack of entered quantity of selected coin-->
+          <!--Output of height of stack of entered quantity of selected coin
           <div class="coin_Height">
             <span
               >If you were to stack these coins one on the other the stack would
@@ -145,7 +161,7 @@
             ><span style="background: white" id="coins_Height"></span
             ><span>meters high</span>
           </div>
-          <!--Output of m³ volume of entered quantity of selected coin-->
+          <!--Output of m³ volume of entered quantity of selected coin
           <span
             >The total volumn of
             <span style="background: white" id=" quan"></span><span></span>
@@ -158,28 +174,24 @@
           ><span>m³</span>
         </div>
         <!--Input of value of total coins to be calculated-->
-        <div class="grid--item coinsWorth coinsWorthVolumn">
-          <!--<form>
-            <label for="worth"><mark>Enter Total Value of Coins</mark></label
-            ><br />
-            <input
-              style="background: rgb(174, 185, 157)"
-              id="worth"
-              type="number"
-            />
+        <div
+          class="grid--item coinsWorth coinsWorthVolumn"
+          style="display: block"
+        >
+          <form>
+            <label for="worth">Enter Total Value of Coins</label><br />
+            <input style="background: white" id="worth" type="number" />
           </form>
-          <!--Output of m³ volume of entered quantity of selected coin
-          <span><mark>The total volumn of $</mark></span
-          ><mark><span id="coinWorth"></span></mark>
-          <span><mark> worth of</mark></span>
-          <mark><span id="nameD"></span></mark>
-          <span><mark>coins is</mark></span
-          ><br />
+          <!--Output of m³ volume of entered quantity of selected coin-->
+          <span>The total volumn of $</span><span id="coinWorth"></span>
+          <span> worth of</span>
+          <span id="nameD"></span>
+          <span>coins is</span><br />
           <span
             style="background: white; border: 1px solid black"
             id="totalCoinWorthVolumn"
           ></span
-          ><span><mark>m³</mark></span>-->
+          ><span>m³</span>
         </div>
       </div>
       <div class="grid"></div>

@@ -31,7 +31,7 @@ select.addEventListener("change", (event) => {
 
 
     /*single coin volume*/
-    var coin_Volume = numberFormat(Math.round(((dia * dia * thickness))));
+    var coin_Volume = (Math.round(((dia * dia * thickness))));
 
 
     document.getElementById("coin_Volume").value = coin_Volume;

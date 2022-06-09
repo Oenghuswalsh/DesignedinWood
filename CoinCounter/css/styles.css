@@ -9,8 +9,56 @@ body {
 header {
   display: inline;
   align-content: center;
-
 }
+
+.choseAction {
+  background-color: gold;
+  height: 40vh;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3rem 2rem 3rem 2rem;
+  align-items: center;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 3rem;
+  width: 100%;
+  margin: 0;
+}
+
+
+.butOne {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.butTwo {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+
 
 h1 {
   text-align: center;
@@ -68,8 +116,12 @@ img.grid--item {
 
 .coinsWorth {
   padding-top: 5rem;
-  background-image: url(/CoinCounter/images/coin_1.jpg);
+
   
+}
+
+.rMcDuck {
+  transform: rotateY(180deg);
 }
 
 
@@ -88,6 +140,15 @@ mark {
     text-shadow: 3px 3px 5px rgb(188, 184, 184);
     font-size: 3rem;
   }
+
+  .choseAction {
+    background-color: gold;
+    height: 100%;
+  
+  
+  }
+
+
 
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
