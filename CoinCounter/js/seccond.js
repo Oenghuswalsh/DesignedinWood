@@ -1,10 +1,6 @@
 /* Thousand ", " Million ", " Billion formater*/
-function numberFormat(d) {
-    for (var e = 0; d >= 1000; e++) {
-        d /= 1000;
-    }
-    return d.toFixed(1) + ["", " Thousand ", " Million ", " Billion "][e];
-}
+var numberFormat = n => ((Math.log10(n) / 3 | 0) == 0) ? n : Number((n / Math.pow(10, (Math.log10(n) / 3 | 0) * 3)).toFixed(1)) + ["", " Thousand", "M", "B", "T",][Math.log10(n) / 3 | 0];
+
 /* from HTML get index value of selected coin*/
 var select = document.querySelector("#coin");
 select.addEventListener("change", (event) => {

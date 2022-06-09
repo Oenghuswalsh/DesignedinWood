@@ -43,7 +43,7 @@ h2 {
   padding: 1rem;
   margin: 0;
   border: 1px solid black;
-  border-radius: 50%;
+  border-radius: 50%;  
 }
 
 .butTwo {
@@ -56,6 +56,11 @@ h2 {
   margin: 0;
   border: 1px solid black;
   border-radius: 50%;
+}
+
+.butOne:hover, .butTwo:hover {
+  background-color: gold;
+  border: 1px solid red;
 }
 
 

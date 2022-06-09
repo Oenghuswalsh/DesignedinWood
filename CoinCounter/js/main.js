@@ -1,16 +1,29 @@
-/* Thousand ", " Million ", " Billion formater*/
-function numberFormat(d) {
-  for (var e = 0; d >= 1000; e++) {
-    d /= 1000;
-  }
-  return d.toFixed(1) + ["", " Thousand ", " Million ", " Billion "][e];
+const element = document.getElementById("buttonOne");
+element.addEventListener("click", showBedroom);
+function showBedroom() {
+  document.getElementById("bedroomVolume").style.display = "block";
+  document.getElementById("hideChoice").style.display = "none";
 }
+const elefent = document.getElementById("buttonTwo");
+elefent.addEventListener("click", showMoney);
+function showMoney() {
+  document.getElementById("valueOfCoins").style.display = "block";
+  document.getElementById("hideChoice").style.display = "none";
+}
+
+
+
+/* Thousand ", " Million ", " Billion formater*/
+var numberFormat = n => ((Math.log10(n) / 3 | 0) == 0) ? n : Number((n / Math.pow(10, (Math.log10(n) / 3 | 0) * 3)).toFixed(1)) + ["", " Thousand", "M", "B", "T",][Math.log10(n) / 3 | 0];
+
 /*length,width,height of bedroom*/
 function volume() {
   var volume;
   var length = document.getElementById("length").value;
   var width = document.getElementById("width").value;
   var height = document.getElementById("height").value;
+
+
   /*volume for output of bedrom volume*/
   var volume = length * width * height;
   volume = volume.toFixed(1);
