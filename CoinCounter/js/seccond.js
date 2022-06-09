@@ -58,7 +58,7 @@ select.addEventListener("change", (event) => {
         Math.round(((thickness * coins) / 1000 + Number.EPSILON) * 100) / 100
     );
     document.getElementById("coinsHeight").innerHTML = coinsHeight;
-    console.log(volumn);
+
 
 
     if (volumn > 0) {

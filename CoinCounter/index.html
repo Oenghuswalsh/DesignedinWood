@@ -69,6 +69,10 @@
         </div>
         <div class="grid--item" id="coinVolumn" style="display: none">
           <form id="myCoin">
+            <span>Bedroom size is L= </span><span id="roomLength"></span
+            ><span>m</span><span> * W= </span><span id="roomWidth"></span
+            ><span>m</span><span> * H= </span><span id="roomHeight"></span
+            ><span>m</span><br />
             <label for="volume">Volume of bedroom =</label>
             <input type="text" name="volume" id="volume" />Meters³ <br />
             <!--Input coin selection-->
@@ -87,16 +91,22 @@
         </div>
         <div class="grid--item" id="bedroom" style="display: none">
           <!--Output of number of coins to fill bedroom-->
-          <form id="myVcoin">
-            <label for="coin_Volume"></label>
-            <span>The volumn of a</span>
-            <span style="background: gold" id="name"></span>
-            <span> coin is</span>
-            <input type="text" name="coin_Volume" id="coin_Volume" />mm³<br />
-          </form>
           <div class="mySpaceCoins">
+            <span>Bedroom size is L= </span><span id="rmLength"></span
+            ><span>m</span><span> * W= </span><span id="rmWidth"></span
+            ><span>m</span><span> * H= </span><span id="rmHeight"></span
+            ><span>m</span><br />
             <label for="volumeB">Volume of bedroom =</label>
             <input type="text" name="volumeB" id="volumeB" />Meters³ <br />
+            <span>You selected a </span><span id="nameC"></span
+            ><span> coin.</span><br />
+            <form id="myVcoin">
+              <label for="coin_Volume"></label>
+              <span>The volumn of a</span>
+              <span style="background: gold" id="name"></span>
+              <span> coin is</span>
+              <input type="text" name="coin_Volume" id="coin_Volume" />mm³<br />
+            </form>
             <span>It would take</span>
             <span style="background: gold" id="bedRoomCoins"></span>
             <span>_</span>
@@ -139,7 +149,7 @@
           <span
             >The total volumn of
             <span style="background: white" id=" quan"></span><span></span>
-            <span style="background: white" id="nameC"></span> coins is</span
+            <span style="background: white" id="nameD"></span> coins is</span
           ><br />
           <span
             style="background: white; border: 1px solid black"

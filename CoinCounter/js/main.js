@@ -15,8 +15,26 @@ function volume() {
   var volume = length * width * height;
   volume = volume.toFixed(1);
   document.getElementById("volume").value = volume;
+
+  var roomLength = length;
+  var roomWidth = width;
+  var roomHeight = height;
+
+  document.getElementById("roomLength").innerHTML = roomLength;
+  document.getElementById("roomWidth").innerHTML = roomWidth;
+  document.getElementById("roomHeight").innerHTML = roomHeight;
+
+  var rmLength = length;
+  var rmWidth = width;
+  var rmHeight = height;
+
+  document.getElementById("rmLength").innerHTML = rmLength;
+  document.getElementById("rmWidth").innerHTML = rmWidth;
+  document.getElementById("rmHeight").innerHTML = rmHeight;
+
   return false;
 }
+
 window.onload = document.getElementById("MyForm").onsubmit = volume;
 function hideDiv() {
   document.getElementById("bedroomVolume").style.display = "none";
@@ -47,4 +65,6 @@ select.addEventListener("change", (event) => {
   /* coin name for Output of mm³ volume of selected coin*/
   var name = name;
   document.getElementById("name").innerHTML = name;
+  var nameC = name;
+  document.getElementById("nameC").innerHTML = nameC;
 });

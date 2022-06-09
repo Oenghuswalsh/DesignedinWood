@@ -35,7 +35,6 @@ select.addEventListener("change", (event) => {
 
 
     document.getElementById("coin_Volume").value = coin_Volume;
-    console.log(coin_Volume)
 });
 window.onload = document.getElementById("myVcoin").onsubmit = coin_Volume;
 
