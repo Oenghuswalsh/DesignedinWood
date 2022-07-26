@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How many coins</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="header_H1">
+      <header>
+        <h1>How many coins fit?</h1>
+      </header>
+      <p class="paras">
+        If you won the lotto and recieved your winnings in coins could you fit
+        it all in your bedroom?
+      </p>
+      <p class="paras">
+        You might be suprised by how much space a few million coins will take
+        up!
+      </p>
+      <p class="paras">
+        Try entering the dimentions of you berdoom below and chose a coin and
+        see how many coins you could fit, just remember this will fill you room
+        with coins and not leave any space left for you or the bed. lol
+      </p>
+    </div>
+    <!--Input fields for bedroom sizes-->
+    <div class="grid_3x3">
+      <div>
+        <div class="mySpaceSizes">
+          <form action="" method="post" id="MyForm">
+            <label for="length, width, heigth">The Size of My Bedroom is</label
+            ><br />
+            <input
+              class="roomsize"
+              id="length"
+              type="number"
+              placeholder="Length"
+              required
+            />Meters<br />
+            <input
+              class="roomsize"
+              id="width"
+              type="number"
+              placeholder="Width"
+              required
+            />Meters<br />
+            <input
+              class="roomsize"
+              id="heigth"
+              type="number"
+              placeholder="heigth"
+              required
+            />Meters <br />
+            <label for="volume">Volume =</label> <br />
+            <input type="text" name="volume" id="volume" />m³ <br />
+            <input type="submit" value="Calculate" id="submit" />
+          </form>
+        </div>
+      </div>
+      <div>
+        <!--Output of number of coins to fill bedroom-->
+        <div class="mySpaceCoins">
+          <span>It would take</span>
+          <span style="background: white" id="bedRoomCoins"></span>
+          <span>_</span>
+          <span style="background: white" id="nameD"></span>
+          <span>coins to fill my bedroom</span>
+        </div>
+        <!--Output of value of coins to fill bedroom-->
+        <div class="mySpaceCoinsWorth">
+          <span>That is equal to $</span
+          ><span style="background: white" id="coinsValue"></span>
+        </div>
+        <!--Output of height of stack of coins that filled bedroom-->
+        <div class="coinHeight">
+          <span
+            >If you were to stack these coins one on the other the stack would
+            reach</span
+          ><span style="background: white" id="coinsHeight"></span
+          ><span>meters high</span><br />
+          <span></span>
+        </div>
+      </div>
+      <!--Image of Scruge McDuck in money bin-->
+      <img src="images/coin_2.jpg" alt="" />
+      <!--Input coin selection-->
+      <div class="coinVolumn">
+        <form>
+          <label class="coinSelection" for="coin">Select Coin</label><br />
+          <select class="coinSelection" id="coin">
+            <option value="0">to calculate</option>
+            <option value="1">5cents</option>
+            <option value="2">10cents</option>
+            <option value="3">20cents</option>
+            <option value="4">50cents</option>
+            <option value="5">1dollar</option>
+            <option value="6">2dollar</option>
+          </select>
+        </form>
+        <!--Output of mm³ volume of selected coin-->
+        <span>The volumn of a</span>
+        <span style="background: white" id="name"></span> <span> coin is</span
+        ><br /><span
+          style="background: white; border: 1px solid black"
+          id="coin_Volume"
+        ></span>
+        <span>mm³</span>
+      </div>
+      <!--Input number of coins-->
+      <div class="numberOfCoins volumnOfCoins">
+        <form>
+          <label for="quantity">Enter number of Coins</label><br />
+          <input id="quantity" type="number" />
+        </form>
+        <!--Output of height of stack of entered quantity of selected coin-->
+        <div class="coin_Height">
+          <span
+            >If you were to stack these coins one on the other the stack would
+            reach</span
+          ><span style="background: white" id="coins_Height"></span
+          ><span>meters high</span>
+        </div>
+        <!--Output of m³ volume of entered quantity of selected coin-->
+        <span
+          >The total volumn of <span style="background: white" id=" quan"></span
+          ><span></span>
+          <span style="background: white" id="nameB"></span> coins is</span
+        ><br />
+        <span
+          style="background: white; border: 1px solid black"
+          id="totalCoinVolumn"
+        ></span
+        ><span>m³</span>
+      </div>
+      <!--Input of value of total coins to be calculated-->
+      <div class="coinsWorth coinsWorthVolumn">
+        <form>
+          <label for="worth">Enter Total Value of Coins</label><br />
+          <input style="background: white" id="worth" type="number" />
+        </form>
+        <!--Output of m³ volume of entered quantity of selected coin-->
+        <span>The total volumn of $</span
+        ><span style="background: white" id="coinWorth"></span>
+        <span> worth of</span>
+        <span style="background: white" id="nameC"></span> <span>coins is</span
+        ><br />
+        <span
+          style="background: white; border: 1px solid black"
+          id="totalCoinWorthVolumn"
+        ></span
+        ><span>m³</span>
+      </div>
+    </div>
+  </body>
+</html>
