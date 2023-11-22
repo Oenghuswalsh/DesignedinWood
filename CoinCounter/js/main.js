@@ -11,10 +11,12 @@ function showMoney() {
   document.getElementById("hideChoice").style.display = "none";
 }
 
-
-
 /* Thousand ", " Million ", " Billion formater*/
-var numberFormat = n => ((Math.log10(n) / 3 | 0) == 0) ? n : Number((n / Math.pow(10, (Math.log10(n) / 3 | 0) * 3)).toFixed(1)) + ["", " Thousand", "M", "B", "T",][Math.log10(n) / 3 | 0];
+var numberFormat = (n) =>
+  ((Math.log10(n) / 3) | 0) == 0
+    ? n
+    : Number((n / Math.pow(10, ((Math.log10(n) / 3) | 0) * 3)).toFixed(1)) +
+      ["", " Thousand", "M", "B", "T"][(Math.log10(n) / 3) | 0];
 
 /*length,width,height of bedroom*/
 function volume() {
@@ -22,7 +24,6 @@ function volume() {
   var length = document.getElementById("length").value;
   var width = document.getElementById("width").value;
   var height = document.getElementById("height").value;
-
 
   /*volume for output of bedrom volume*/
   var volume = length * width * height;

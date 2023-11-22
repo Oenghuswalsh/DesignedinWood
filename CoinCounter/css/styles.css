@@ -1,5 +1,5 @@
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: gold;
   line-height: 1.25rem;
   margin: 0 1rem 1rem;
@@ -33,7 +33,6 @@ h2 {
   margin: 0;
 }
 
-
 .butOne {
   display: inline-block;
   position: relative;
@@ -43,7 +42,7 @@ h2 {
   padding: 1rem;
   margin: 0;
   border: 1px solid black;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 
 .butTwo {
@@ -58,12 +57,21 @@ h2 {
   border-radius: 50%;
 }
 
-.butOne:hover, .butTwo:hover {
+.butOne:hover,
+.butTwo:hover {
   background-color: gold;
   border: 1px solid red;
 }
 
-
+.resetButton {
+  background-color: rgb(240, 240, 240);
+  text-decoration: none;
+  color: black;
+  padding: 0 1rem;
+  border: 1px black solid;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
 
 h1 {
   text-align: center;
@@ -87,8 +95,6 @@ p {
   border-right: solid 2px blue;
   border-left: solid 2px blue;
   grid-gap: 2px;
-  
-  
 }
 
 .grid--item {
@@ -97,23 +103,19 @@ p {
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
- 
-  
 }
 
 img.grid--item {
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   padding-top: 0;
   padding-bottom: 0%;
-  size: 100%;
+  width: 100%;
   height: 100%;
-  
 }
 
 .mySpaceSizes {
   margin-bottom: 0;
 }
-
 
 .bedroomCoins {
   margin-bottom: 0;
@@ -121,14 +123,11 @@ img.grid--item {
 
 .coinsWorth {
   padding-top: 5rem;
-
-  
 }
 
 .rMcDuck {
   transform: rotateY(180deg);
 }
-
 
 mark {
   background-color: rgb(174, 185, 157);
@@ -149,11 +148,7 @@ mark {
   .choseAction {
     background-color: gold;
     height: 100%;
-  
-  
   }
-
-
 
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
@@ -165,44 +160,4 @@ mark {
     margin: 0.5rem auto;
     text-align: center;
   }
-
-  
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*moon 384,400km
-  earth circumference 40,075km
-  hight of everest 8,849m
-  Burj Khalifa in Dubai 828m
-  newyork too sydney 15988km
-  stright line distance between newyork and la 3936km
-  cruising altitude 10,000m
-
-  average bedroom 30m3
-  shipping containers 76 cubic metres
-  tesla 3.17m3
-  volume of olympic swimming pool 2,500 m3
-
-  
-  
